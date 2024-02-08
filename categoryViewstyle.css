@@ -1,0 +1,188 @@
+
+#categories{
+    display: flex;
+    justify-content: space-evenly;
+    width:75%;
+    margin: auto;
+    background-color: rgb(216, 208, 208);
+    border-radius: 5px;
+    padding: 1rem 0.3rem;
+}
+#Loading {
+    background-color: rgb(32, 236, 124);
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+
+#listView{
+    width:75%;
+    margin: auto;
+    text-align: left;
+    border-collapse:collapse ;
+    
+}
+
+.colitem{
+    padding: 1rem;
+  
+}
+
+#itemViewImages{
+    width: 100%;
+}
+
+th{
+    padding: 1%;
+    background-color: white;
+}
+
+
+tr:nth-child(even) {
+    background-color: rgb(238, 236, 236);
+  }
+
+tr:nth-child(odd){
+    background-color: rgb(247, 248, 249);
+}
+
+
+#itemHeadings{
+    padding:20px;
+    padding-top:50px;
+}
+
+h2{
+    border-bottom: 2px black solid;
+}
+
+.gallery-container{
+    text-align: left;
+    margin-right: 60px;
+    margin-left: 10px;
+    display: inline;
+}
+
+.current-image img{
+  
+    max-height: 800px;
+    margin-right: 2px;
+    max-width: 100%;
+}
+
+.thumbnail-images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap:10px;
+    margin-right: 2px;
+}
+
+.thumbnail-images img{
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+#galleryCloseup{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.itemHeadings {
+    display: flex;
+    justify-content: space-between;
+}
+#itemViewImages {
+    width: 120px;
+    height: 100px;
+    object-fit: cover;
+}
+#itemDetails{
+    display: flex;
+    flex-flow: column;
+    width: 30%;
+    
+}
+
+#listView tr:hover {
+    background-color: rgb(172, 241, 172);
+}
+
+#itemDesc{
+    height: 80%;
+}
+
+select{
+    width: 15rem;
+}
+
+#wrapper {
+    width: 75%;
+    margin:auto;
+}
+#itemView{
+    margin-right: 10%;
+    margin-left: 10%;
+}
+h1{
+    width: 75%;
+    margin:auto;
+    padding-top: 2%;
+    padding-bottom: 2%;
+
+}
+
+#initialTableMessage{
+    text-align: center;
+}
+
+#dropDownMenu {
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+}
+
+.itemOption {
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 1rem; 
+}
+
+label {
+    margin-right: 0.5rem;
+}
+
+#itemOptions{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: 60px;
+
+}
+
+#buy{
+    margin-left: 5rem;
+    width: 10rem;
+}
+
+#buyButton{
+    background-color: black;
+    color: white;
+    
+}
+
+#itemHeadings{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+.hide {
+    display: none !important;
+}

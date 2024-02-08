@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <link rel="stylesheet" href="categoryViewstyle.css">
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>The Online Store</h1>
+        </header>
+        <nav id="categories">
+            <div id="Loading">Loading Categories</div>
+        </nav>
+        <main>
+            <table id="listView">
+                <thead>
+                    <tr>
+                        <th colspan="1" id="itemimage" scope="colgroup"></th>
+                        <th colspan="1" id="itemName" scope="col">Item</th>
+                        <th colspan="1" id="desc"  scope="col">Description</th>
+                        <th colspan="1" id="price" scope="col">Price</th>
+                    </tr>
+                </thead>
+                <tbody id="items">
+                    <tr>
+                        <td colspan="4" id="initialTableMessage">Choose a filter category above</td>
+                        <td rowspan="1" scope="row" headers="itemimage" class="rowitem"></td>
+                        <td rowspan="1" scope="row" headers="itemName" class="rowitem"></td>
+                        <td rowspan="1" scope="row" headers="Description" id="descp" class="rowitem" ></td>
+                        <td rowspan="1" scope="row" headers="Price" class="rowitem"></td>
+                    </tr>
+                </tbody>
+            </table><!--end #listView-->
+
+
+            <!--Begining of the second page-->
+            <section id="itemView">
+                <div id=" itemHeadings">
+                    <h2 class="itemHeadings"><span>Item name</span>  <span id="itemView_price">$0.00</span> </h2>
+                </div>
+                <button onclick="hideItem()">X</button>
+                <!--The container showing items images-->
+            <div id="galleryCloseup">
+                <div class=" gallery-container">
+                    <div class="current-image">
+                        <img src="https://placehold.co/600x400?text=photo+1" alt="photo1" id="main-image">
+                    </div>
+                    <div class="thumbnail-images">
+                        <img src="https://placehold.co/600x400?text=photo+2" alt="photo2" onclick="changeImage(this)" >
+                        <img src="https://placehold.co/600x400?text=photo+3" alt="photo3" onclick="changeImage(this)">
+                        <img src="https://placehold.co/600x400?text=photo+4" alt="photo4" onclick="changeImage(this)" >
+                    </div>
+                </div><!--end of gallery container-->
+    
+                <!--The container showing items details-->
+                <article id="itemDetails">
+                    <div id="itemDesc">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident molestiae debitis 
+                            quibusdam amet quisquam odio? Sequi, nihil deleniti. Harum dolore quod eaque doloribus distinctio maiores, 
+                            reiciendis odio quo autem officiis?Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Mollitia fuga hic, dolores commodi quo dignissimos tempora. 
+                            Dolore dignissimos laboriosam autem fugiat recusandae, odit, 
+                            est magni nemo nesciunt ea cum provident!
+                        </p>
+                    </div>
+                    
+                    <div id="itemOptions">
+                            <div id="itemImageSelection">
+                                
+                            </div>
+                            <div id="itemOptions">
+                                <div id="dropDownMenu">
+                                    <div class="itemOption">
+                                        <label for="size">Size:</label>
+                                        <select name="size" id="itemSizeSelection">
+                                        
+                                        </select>
+                                    </div>
+                                    <div class="itemOption">
+                                        <label for="color">Color:</label>
+                                        <select name="color" id="itemColor">
+                                            
+                                        </select>
+                                    </div>
+                                    <div class="itemOption">
+                                        <label for="qty">Qty:</label>
+                                        <select name="qty" id="ItemQty">
+                                    
+                                        </select>
+                                    </div>
+                                </div>
+                                <div id="buy">
+                                    <button id="buyButton">
+                                        Buy Now!
+                                    </button>
+                                </div>
+                        </div>
+
+                       
+                        
+                    </div>
+                   
+                </article> <!--end of container showing items details-->
+               
+            </div>
+        </section>
+        </main>
+        <script src="script.js"></script>
+        <footer></footer>
+    </div><!--end #wrapper-->
+</body>
+</html>
+
