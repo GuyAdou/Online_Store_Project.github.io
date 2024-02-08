@@ -2,6 +2,12 @@
 ## Live Demo
 Visit the [Online Store](https://guyadou.github.io/Online_Store_Project_/) to explore my dynamic e-commerce platform and start your shopping experience.
 
+![image](https://github.com/GuyAdou/Online_Store_Project_/assets/69226314/cefbd9f2-1a43-4d31-bef4-4a97e5e2d175)
+
+![image](https://github.com/GuyAdou/Online_Store_Project_/assets/69226314/68822e31-750e-49bb-81f3-bee69f18a79a)
+
+
+
 ## Introduction
 Welcome to the Online Store, an e-commerce platform designed for a seamless and engaging shopping experience. The store offers a dynamic and responsive interface for shopping a wide array of products.
 
