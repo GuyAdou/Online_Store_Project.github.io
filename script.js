@@ -17,13 +17,23 @@ var $ = function $(variable){
  const api_url ="https://6245f389e3450d61b0f926c1.mockapi.io/api/v1/"; 
 
 function showElement(sthgToShow){
-    return $(sthgToShow).classList.remove('hide')
+
+    const element = $(sthgToShow);
+    if (element) {
+        element.style.display = 'block';
+        document.body.style.overflow = 'hidden';
+    }
 }
 
  function hideElement(sthgToHide){
-    console.log(sthgToHide)
-    return $(sthgToHide).classList.add('hide')
- }
+
+    const element = $(sthgToHide);
+    if (element) {
+        element.style.display = 'none';
+        document.body.style.overflow = ''; 
+        
+
+ }}
 
  async function getAPiData(url){
      try{
@@ -86,9 +96,11 @@ function showElement(sthgToShow){
 
  async function displayItem(itemid,prdId) {
 	
-    hideElement("nav")
-    hideElement("table")
+
+    document.querySelector("nav").classList.add("blur-effect");
+    document.querySelector("table").classList.add("blur-effect");
     showElement("#itemView")
+
 
     let results = await getAPiData(api_url+ "categories/"+itemid+`/items/${prdId}`);
     //https://6245f389e3450d61b0f926c1.mockapi.io/api/v1/categories/2/items/a0341b6e-95ef-4317-869c-62f5df839ffa
@@ -149,23 +161,19 @@ function showElement(sthgToShow){
         galleryContent.innerHTML = html;
      } else {
        console.log("The element does not exist.");
+
+    return
+
      }
 
 }
 
 function hideItem() {
-	/*
-		- clear item elements
-		- hide #itemView
-		- show <nav> #categories
-		- show #listView
-        
-	*/
     hideElement("#itemView")
-    showElement("nav")
-    showElement("table")
+    document.querySelectorAll(".blur-effect").forEach(element => {
+        element.classList.remove("blur-effect")});
 }
 
+hideElement("#itemView")
 
-
- document.addEventListener('DOMContentLoaded',processCategories)
+document.addEventListener('DOMContentLoaded',processCategories)

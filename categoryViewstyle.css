@@ -68,6 +68,7 @@ h2{
     max-height: 800px;
     margin-right: 2px;
     max-width: 100%;
+    border-radius: 10px;
 }
 
 .thumbnail-images{
@@ -101,6 +102,8 @@ h2{
     width: 120px;
     height: 100px;
     object-fit: cover;
+    border-radius: 5px;
+    
 }
 #itemDetails{
     display: flex;
@@ -126,8 +129,18 @@ select{
     margin:auto;
 }
 #itemView{
-    margin-right: 10%;
-    margin-left: 10%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: none;
+
 }
 h1{
     width: 75%;
@@ -144,7 +157,7 @@ h1{
 #dropDownMenu {
     display: flex;
     flex-direction: column;
-    width: 15rem;
+    width: 10rem;
 }
 
 .itemOption {
@@ -161,12 +174,12 @@ label {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-left: 60px;
+    margin-left: 10%;
 
 }
 
 #buy{
-    margin-left: 5rem;
+    margin-left: 5%;
     width: 10rem;
 }
 
@@ -186,3 +199,11 @@ label {
 .hide {
     display: none !important;
 }
+
+.blur-effect {
+    filter: blur(10px);
+    pointer-events: none; 
+    user-select: none;
+}
+
+
